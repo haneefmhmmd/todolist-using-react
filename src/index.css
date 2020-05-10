@@ -89,13 +89,7 @@ body{
   left: 60px;
   bottom: 55px;
 }
-button:hover {
-  cursor: pointer;
-  background-color: #FC766AFF;
-  /* background-color: blue; */
-  color: white;
-  outline: none;
-}
+
 .normalButton:focus{
   outline: 0;
 }
@@ -221,4 +215,12 @@ button:hover {
     bottom: 55px;
   }
 }
-@media(hover:none)
+@media(hover:hover) {
+  button:hover {
+    cursor: pointer;
+    background-color: #FC766AFF;
+    /* background-color: blue; */
+    color: white;
+    outline: none;
+  }
+}
