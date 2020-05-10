@@ -1,13 +1,223 @@
-body {
+body{
+  background-color: #FC766AFF;
+  box-sizing: border-box;
+  position: relative;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  border: 0;
+  outline: none;
+  /* background-image: url(bg3.jpg);
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-attachment: fixed;
+  position: relative;
+  width: 100%; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  /* text-align: center; */
+  width: 400px;
+  margin: 50px auto;
+  background-color: #5B84B1FF;
+  min-height: 500px;
+  position: relative;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.addButton{
+  height: 50px;
+  min-width: 100px;
+  margin: 15px;
+  border-radius: 5px;
+  outline: none;
+  border: 0;
+  padding: 10px;
+  background-color: #5F4B8BFF;
+  color: white;
+  font-size: larger;
+}
+.normalButton{
+  min-width: 100px;
+  margin: 15px;
+  border-radius: 5px;
+  outline: none;
+  border: 0;
+  padding: 10px;
+  background-color: #5F4B8BFF;
+  color: white;
+  font-size: larger;
+
+}
+.-one {
+  position: absolute;
+  left: 10px;
+  bottom: 2px;
+}
+.-two {
+  position: absolute;
+  left : 130px;
+  bottom: 2px;
+}
+.-three {
+  position: absolute;
+  right : 10px;
+  bottom: 2px;
+}
+.-four {
+  position: absolute;
+  left: 60px;
+  bottom: 55px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #FC766AFF;
+  /* background-color: blue; */
+  color: white;
+  outline: none;
+}
+.normalButton:focus{
+  outline: 0;
+}
+.closeButton:focus{
+  outline: none;
+}
+.closeButton{
+  padding: 2px 5px;
+  border-radius: 5px;  
+  color: #000;
+  margin-top: 7px;
+  border: 0;
+  outline: none;
+  position: absolute;
+  right: 15px;
+}
+.closeButton:hover {
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  outline: none;
+}
+
+.todoform-input{
+  height: 30px;
+  width: 200px;
+  margin: 20px 20px 0 20px;
+  border-radius: 5px;
+  outline: none;
+  border: 0;
+  padding: 10px;
+  background-color: #5F4B8BFF;
+  color: white;
+  font-size: larger;
+}
+
+.todo{
+  color: #fff;
+  width: 300px;
+  margin: 10px auto;
+  height: 40px;
+  background-color: #bf07ac;
+  border-radius: 5px;
+  position: relative;
+}
+
+.todo-content{
+  margin-top: 7px;
+  position: absolute;
+  left: 15px;
+  font-size: larger;
+}
+
+.todo-content:hover {
+  cursor: pointer;
+}
+.container {
+  height: 280px;
+  overflow: auto;
+  /* border: 5px solid black; */
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color : rgba(0,0,0,0.15) ;
+}
+::-webkit-scrollbar-thumb {
+  border-radius:10px;
+  background-color: rgb(156,126,245);
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: royalblue;
+}
+
+@media only screen and (max-width:420px) {
+  .App{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    background-color: #5B84B1FF;
+  }
+  button:hover{
+    background-color: none;
+  }
+  .todoform-input {
+    width: 45%;
+  }
+  .closeButton{
+    margin-top: 10px;
+  }
+  .normalButton {
+    width: 20%;
+  }
+  .container {
+    height: 520px;
+    font-size: larger;
+    outline: none;
+  }
+  .-one {
+    position: absolute;
+    left: 2px;
+    bottom: 2px;
+    width: 20px;
+  }
+  .-two {
+    position: absolute;
+    left : 115px;
+    bottom: 2px;
+  }
+  .-three {
+    position: absolute;
+    right : 2px;
+    bottom: 2px;
+  }
+  .-four {
+    position: absolute;
+    width: 90%;
+    left: 0px;
+    bottom: 55px;
+  }
 }
