@@ -181,8 +181,8 @@ button:hover {
     outline: none;
     background-color: #5B84B1FF;
   }
-  button:hover{
-    background-color: none;
+  .addButton:hover,.-one:hover,.-two:hover,.-three:hover,.-four:hover{
+    background-color: #5F4B8BFF;
   }
   .todoform-input {
     width: 45%;
